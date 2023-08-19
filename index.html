@@ -22,14 +22,8 @@ end
 </ul>
 # /app.rb
 
-get("/dynamic/50/6") do
-  @rolls = []
+get '/dice/50/6' do
 
-  50.times do
-    die = rand(1..6)
+  "Hello World"
 
-    @rolls.push(die)
-  end
-
-  erb(:flexible)
 end
